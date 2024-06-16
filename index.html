@@ -16,35 +16,51 @@
             <div class="credits">Photo by <a href="https://unsplash.com/fr/@theforestbirds?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joel & Jasmin Førestbird</a> on <a href="https://unsplash.com/fr/photos/personne-randonnee-au-dessus-de-la-montagne-surplombant-la-riviere-znoL1m6MD_k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
         </div>
         <div class="right-side">
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptatem accusamus delectus, dolor ipsa animi libero sint illo maiores dolorem suscipit similique laborum tenetur vero quisquam esse sit aliquid pariatur?</p>
-                <p>Lorem ipsum dolor sit</p>
+            <div class="header-content">
+                <p>This not a real online service! You know you need something like this in your life to help you plan your dream trip.</p>
+                <p>You <i>know</i> you want to.</p>
             </div>
-            <form action="./index.html" method="GET">
-                <section>
-                    <h3>Let's do this!</h3>
-                    <div class="form-name">
-                        <label for="first-name">First name</label>
-                        <input type="text" id="first-name" name="first-name">
-                        <label for="last-name">Last name</label>
-                        <input type="text" id="last-name" name="last-name">
-                    </div>
-                    <div class="contact">
-                        <label for="mail">Email</label>
-                        <input type="email" id="mail" name="email">
-                        <label for="tel">Telephone</label>
-                        <input type="tel" name="telephone" id="tel">
-                    </div>
-                    <div class="password">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                        <label for="confirm">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm">
-                    </div>
-                </section>
-                <button type="submit">Create Account</button>
-           </form>
-           <footer>Already have an account? <a href="">Log in</a></footer> 
+            <div class="form-content">     
+                <form action="./index.html" method="GET">
+                    <section>
+                        <h3>Let's do this!</h3>
+                        <div class="form-block">
+                            <div class="col-1">
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name" name="first-name" minlength="3" maxlength="20">
+                            </div>
+                            <div class="col-2">
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name" name="last-name" minlength="3" maxlength="20">
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="col-1">
+                                <label for="mail">Email</label>
+                                <input type="email" id="mail" name="email" maxlength="40">
+                            </div>
+                            <div class="col-2">
+                                <label for="tel">Telephone</label>
+                                <input type="tel" name="telephone" id="tel" minlength="6" maxlength="16">
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="col-1">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                            </div>
+                            <div class="col-2">
+                                <label for="confirm">Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                            </div>
+                        </div>
+                    </section>
+                    <button type="submit">Create Account</button>
+                </form>
+                <footer>Already have an account? <a href="">Log in</a><footer>         
+            </div>
         </div>
     </div>
     
